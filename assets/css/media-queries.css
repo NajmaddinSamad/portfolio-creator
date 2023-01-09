@@ -106,6 +106,9 @@
             font-size: 13px !important;
         padding-top: 41px !important;}}
 
+
+
+
         @media screen and (max-width: 767px) {header{
             padding-left: 25px !important;
             padding-right: 25px !important;
@@ -199,7 +202,8 @@
             .skills{padding-top: 30px !important;
                 padding-right: 25px !important;
                 padding-left: 25px !important;}
-            .education{padding-bottom: 35px;}
+            .education{padding-bottom: 35px; 
+            }
             .first_part{
                 padding-top: 30px !important;}
             .first_part h3{
@@ -275,6 +279,8 @@
             .links h6:nth-child(8){display: none;}
             .links h6:nth-child(7){display: none;}}
 
+
+            
 @media(max-width:479px) {
    header{
         padding-left: 15px !important;
@@ -284,12 +290,14 @@
     .fa-bars{display: flex !important;}
      .introduction{
             padding-left: 15px !important;
-            padding-right: 15px !important;}
-        .intro-left-side{padding-top: 10px !important;}
+            padding-right: 15px !important;
+            flex-wrap: wrap-reverse;}
+        .intro-left-side{padding-top: 10px !important;
+            align-items: center;}
     .intro-left-side h1{font-size: 25px !important;}
     .intro-left-side p{
         font-size: 18px !important;
-        padding-top: 14px !important;  }
+        padding-top: 14px !important;}
         .intro-right-side img{margin-top: 10px !important;}
         .book_a-call{
             padding-top: 80px !important;
@@ -313,6 +321,7 @@
         .card h3{font-size: 20px !important;}
         .card img{padding-bottom: 10px !important;}
         .project{padding-left: 15px !important;}
+        .results{ margin: 0 auto ; align-items: center;}
         .results h1{font-size: 20px !important;}
         .results h3{margin-bottom: 10px !important;}
         .button button{
@@ -320,6 +329,7 @@
             height:31px !important;
             font-size: 16px !important;
             margin-top: 10px !important;}
+            .button{margin:0  auto ; align-items: center;}
             .results_img .first_card_img , .second_card_img , .third_card_img {
                 padding-bottom: 10px !important;
             }
@@ -344,10 +354,12 @@
             width:9px;
         }
         .latest_blogs{padding-left: 15px !important;
-            padding-right: 15px !important;}
-        .left-side{padding-right: 40px !important;}
+            padding-right: 15px !important;
+        flex-wrap: wrap;}
+        .left-side{align-items: center;}
         .left-side h1{font-size: 18px !important;}
         .left-side h2{font-size: 16px !important;}
+        .right-side{align-items: center;}
         .blog_cards div{
             padding-top: 21px !important;
             padding-bottom: 10px !important; }
@@ -355,19 +367,26 @@
         .product_designer{
             padding-left: 15px !important;
             padding-right: 15px !important;}
-        .pro_up
+        .pro_left{margin: 0 auto;}
         .pro_left h3{font-size: 20px !important;
             padding-top: 26px !important;}
         .pro_left h2{font-size: 30px !important;}
         .pro_right p{padding-top: 25px !important;
             padding-left: 2px !important;
             font-size: 16px !important;}
-        .pro_down{padding-top: 25px !important;}
-        .third_img{margin-bottom: 6px !important;}
+        .pro_down{padding-top: 25px !important;
+        flex-wrap: wrap;
+        margin: 0 auto;}
+        .first_img{margin: 5px auto; width: 100%;}
+        .second_img{margin: 0 auto; width: 100%}
+        .third_img{margin: 5px auto; width: 100%}
+        .fourth_img{margin: 0 auto; width: 100%}
         .skills{padding-top: 30px !important;
             padding-right: 15px !important;
-            padding-left: 15px !important;}
-        .education{padding-bottom: 35px;}
+            padding-left: 15px !important;
+            flex-wrap: wrap;}
+        .education{padding-bottom: 35px; width: 100%;}
+        .work_experience{width: 100%;}
         .first_part{
             padding-top: 30px !important;}
         .first_part h3{
@@ -394,6 +413,7 @@
             padding-right: 15px !important;
             padding-bottom: 40px !important;
         flex-wrap: wrap;}
+        .test_left_side{align-items: center;}
         .test_left_side h4{font-size: 18px !important;}
         .test_left_side h1{font-size: 35px !important;
              padding-bottom: 15px !important;}  
@@ -411,11 +431,10 @@
             padding-bottom: 35px !important;
             padding-right: 15px !important;
             padding-left: 15px !important;}
-        .asked h3{font-size: 20px !important;}
+        .asked h3{font-size: 20px !important; }
         .asked h1{font-size: 40px !important;
             padding-bottom: 60px !important;}
-        .questions{justify-content: center;
-            align-items: center;}
+        .questions{align-items: center;}
         .question_left  h4{
             font-size: 20px !important;
             padding-bottom: 29px !important;
@@ -428,6 +447,7 @@
         .portfolio{ 
             padding-top: 38px !important;
             padding-left: 15px !important;}
+            .portfolio_up{align-items: center;}
         .portfolio h1{  font-size: 40px !important;}
         .portfolio p{font-size: 50px !important;}
         .portfolio_logo{
