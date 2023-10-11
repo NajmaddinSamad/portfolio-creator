@@ -1,15 +1,61 @@
 @import url('./reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-a{
-    text-decoration: none;
-    color: #000;}
-a:hover{
-    text-decoration: underline;}
-body{font-family: 'Roboto', sans-serif;}
-
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
+body{font-family: 'Roboto', sans-serif;}
+
+a{
+    color: #000;
+}
+
+a:hover{
+    text-decoration: underline;}
+    
+    .off-canvas{
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        right: 0;
+        width: 0;
+        height: 100vh;
+        z-index: 111;
+        overflow-x: hidden;
+        transition: width 1.2s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .canvas-nav-links a{
+        font-size: 24px;
+        text-transform: capitalize;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .canvas-nav-links a:hover{
+        color: #6aacc8;
+        transition: color 1.2s ease;
+    }
+    .canvas-nav-links li {
+    
+        padding: 20px;
+    }
+
+    .fa-xmark{
+        color: #fff;
+        font-size: 32px;
+        right: 25px;
+        top: 10px;
+        position: absolute;
+        cursor: pointer;
+    }
+    .fa-xmark:hover{
+        color: #6aacc8;
+        transition: color 1.2s ease;
+    }
 
 /* ------Header:  */
 header{
@@ -21,6 +67,7 @@ header{
 .nav-links a{padding-right: 20px;}
 
 button{cursor: pointer;}
+
 .fa-bars{
     font-size: 26px;
     display: none;
@@ -55,8 +102,9 @@ button{cursor: pointer;}
     font-weight: 400;}
 
 .book_a-call{
+    display: flex;
+    flex-direction: row;
     padding-top: 34px;
-    justify-content: center;
     align-items: center;
     padding-bottom: 125px;
 }
@@ -749,7 +797,7 @@ padding-top: 109px;
 
 /* media-queries */
 
-@media(max-width:991px){
+@media(max-width:992px){
 header{
     padding-left: 75px ;
     padding-right: 75px ; }
@@ -780,7 +828,6 @@ header{
 .product_designer{
     padding-left: 75px ;
     padding-right: 75px ;}
-.pro_up
 .pro_left h3{font-size: 20px ;
     padding-top: 66px ;}
 .pro_left h2{font-size: 30px ;}
@@ -791,7 +838,8 @@ header{
 .third_img{margin-bottom: 6px ;}
 .skills{padding-top: 90px ;
     padding-right: 75px ;
-    padding-left: 75px ;}
+    padding-left: 75px ;
+flex-wrap: wrap;}
 .education{padding-bottom: 65px;}
 .first_part{
     padding-top: 50px ;}
@@ -856,7 +904,7 @@ header{
     padding-top: 41px ;}}
 
 
-@media(max-width: 767px) {
+@media(max-width: 768px) {
 header{
     padding-left: 25px ;
     padding-right: 25px ;
@@ -865,7 +913,16 @@ header{
 .fa-bars{display: flex ;}
 .introduction{
     padding-left: 25px ;
-    padding-right: 25px ;}
+    padding-right: 25px ;
+flex-direction: column-reverse;}
+.intro-left-side *{
+    text-align: center;
+}
+
+.intro-left-side br{
+    display: none;
+}
+
 .intro-left-side{padding-top: 15px ;}
 .intro-left-side h1{font-size: 27px ;}
 .intro-left-side p{
@@ -873,6 +930,9 @@ header{
     padding-top: 16px ;  }
 .intro-right-side img{margin-top: 15px ;}
 .book_a-call{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding-top: 90px ;
     flex-wrap:wrap;}
 .book_a-call button{
@@ -893,8 +953,17 @@ header{
     padding-bottom: 15px ;}
 .card h3{font-size: 22px ;}
 .card img{padding-bottom: 10px ;}
-.card:nth-child(3){display: none;}
-.project{padding-left: 25px ;}
+
+
+.project{padding-left: 25px ;
+text-align: center;}
+.data {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   padding: 0;
+
+}
 .results h1{font-size: 22px ;}
 .results h3{margin-bottom: 15px ;}
 .button button{
@@ -902,6 +971,14 @@ header{
     height:40px ;
     font-size: 18px ;
     margin-top: 15px ;}
+    .results_img{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .results_img img{
+max-width: 307px;
+    }
 .results_img .first_card_img , .second_card_img , .third_card_img {
     padding-bottom: 10px ;}
 .results_img h2{
@@ -922,10 +999,40 @@ header{
     padding-left: 2px ;
     width:12px;}
 .latest_blogs{padding-left: 25px ;
-    padding-right: 25px ;}
-.left-side{padding-right: 50px ;}
+    padding-right: 25px ;
+flex-wrap: wrap-reverse;}
+.left-side{    justify-content: center;
+    padding: 0 0 40px;
+    align-items: center;}
 .left-side h1{font-size: 22px ;}
-.left-side h2{font-size: 18px ;}
+.left-side h2{font-size: 18px ;
+padding: 0;}
+.blog_cards *{
+    text-align: center;
+}
+.blog_cards{
+    align-items: center;
+}
+
+.blog_cards br{
+    display: none;
+    }
+    
+
+.directions{
+    justify-content: center;
+}
+.blog_cards div{
+    padding-top: 41px ;
+    padding-bottom: 20px ; }
+.blog_cards h3{font-size: 25px ;}
+.product_designer *{
+    text-align: center;
+}
+.product_designer br{
+    display: none;
+}
+
 .blog_cards div{
     padding-top: 21px ;
     padding-bottom: 10px ; }
@@ -935,7 +1042,9 @@ header{
 .product_designer{
     padding-left: 25px ;
     padding-right: 25px ;}
-.pro_up
+    .pro_up{
+        justify-content: center;
+    }
 .pro_left h3{font-size: 25px ;
     padding-top: 26px ;}
 .pro_left h2{font-size: 35px ;}
@@ -946,8 +1055,11 @@ header{
 .third_img{margin-bottom: 6px ;}
 .skills{padding-top: 30px ;
     padding-right: 25px ;
-    padding-left: 25px ;}
+    padding-left: 25px ;
+    justify-content: center;}
 .education{padding-bottom: 35px;}
+.education{padding-bottom: 65px;
+    width: 100%;}
 .first_part{
     padding-top: 30px ;}
 .first_part h3{
@@ -960,6 +1072,9 @@ header{
 .spacefleet{padding-top: 30px ;}
 .musicmash{padding-top: 30px ;}
 .kingdom{padding-top: 30px ;}
+.work_experience{
+    width: 100%;
+}
 .work_first_part h3{  font-size: 20px ;
     justify-content: space-between;}
 .work_second_part{ font-size: 15px;
@@ -973,7 +1088,11 @@ header{
     padding-left: 25px ;
     padding-right: 25px ;
     padding-bottom: 40px ;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+text-align: center;}
+    .testimonials br{
+        display: none;
+    }
 .test_left_side h4{font-size: 22px ;}
 .test_left_side h1{font-size: 38px ;
      padding-bottom: 15px ;}  
@@ -990,12 +1109,14 @@ header{
     padding-top: 38px ;
     padding-bottom: 35px ;
     padding-right: 25px ;
-    padding-left: 25px ;}
+    padding-left: 25px ;
+    text-align: center;}
 .asked h3{font-size: 25px ;}
 .asked h1{font-size: 40px ;
     padding-bottom: 60px ;}
 .questions{justify-content: center;
-    align-items: center;}
+    align-items: center;
+    text-align: start;}
 .question_left  h4{
     font-size: 25px ;
     padding-bottom: 29px ;
@@ -1006,7 +1127,8 @@ header{
     padding-top: 20px ;}
 .portfolio{ 
     padding-top: 38px ;
-    padding-left: 25px ;}
+    padding-left: 25px ;
+    text-align: center;}
 .portfolio h1{  font-size: 42px ;}
 .portfolio p{font-size: 52px ;}
 .portfolio_logo{
@@ -1015,14 +1137,18 @@ header{
 .portfolio_right  {padding-top: 40px ;} 
 .first_port_links {padding-right: 50px ;}
 .second_port_links {padding-right: 50px ;}
+.portfolio_right{
+    text-align: start;
+}
 .links{
-    font-size: 16px ;
+    font-size: 14px ;
     padding-top: 35px ;}
 .links h6:nth-child(2){display: none;}
+.links h6:nth-child(3){display: none;}
 .links h6:nth-child(8){display: none;}
 .links h6:nth-child(7){display: none;}}
         
-@media(max-width:479px) {
+@media(max-width:490px) {
 header{
     padding-left: 15px ;
     padding-right: 15px ;
@@ -1057,6 +1183,9 @@ header{
 .intro-logo div:nth-child(1){display: none;}
 .services{padding-top: 10px ;}
 .services h4{font-size: 25px ;}
+.cards{
+    flex-direction: column;
+}
 .card {padding-top: 15px ;
     padding-bottom: 15px ;}
 .card h3{font-size: 20px ;}
@@ -1118,9 +1247,10 @@ header{
 .pro_down{padding-top: 25px ;
     flex-wrap: wrap;
     margin: 0 auto;}
+   
 .first_img{margin: 5px auto; width: 100%;}
 .second_img{margin: 0 auto; width: 100%}
-.third_img{margin: 5px auto; width: 100%}
+.third_img{margin: 5px auto ; width: 100%}
 .fourth_img{margin: 0 auto; width: 100%}
 .skills{padding-top: 30px ;
     padding-right: 15px ;
@@ -1175,7 +1305,11 @@ header{
 .asked h3{font-size: 20px ; }
 .asked h1{font-size: 40px ;
     padding-bottom: 60px ;}
-.questions{align-items: center;}
+.questions{align-items: center;
+text-align: start;}
+.questions div{
+    width: 100%;
+}
 .question_left  h4{
     font-size: 20px ;
     padding-bottom: 29px ;
@@ -1199,6 +1333,5 @@ header{
 .links{
     font-size: 12px ;
     padding-top: 35px ;}
-.links h6:nth-child(2){display: none;}
 .links h6:nth-child(5){display: none;}
 .links h6:nth-child(8){display: none;}}
