@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfolio-creator</title>
 </head>
 
 <body>
       <div class="off-canvas">
-        <i class="fa-solid fa-xmark"></i>
+        <i class="fa-solid fa-x"></i>
         <ul class="canvas-nav-links">
     <li><a href="#">about</a></li>
     <li><a href="#">services</a></li>
@@ -52,10 +53,21 @@
     <section class="trust">
         <h6>Trusted By</h6>
         <div class="intro-logo">
-            <div> <img src="./assets/svgs/trust/logo1.svg"></div>
-            <div> <img src="./assets/svgs/trust/logo2.svg"> </div>
-            <div> <img src="./assets/svgs/trust/logo3.svg"></div>
-            <div> <img src="./assets/svgs/trust/logo4.svg"></div>
+            <swiper-container class="mySwiper"   space-between="50"
+            slides-per-view="3"
+             autoplay-delay="2500" autoplay-disable-on-interaction="false">
+            <swiper-slide><img src="./assets/svgs/trust/logo1.svg"></swiper-slide>
+            <swiper-slide><img src="./assets/svgs/trust/logo2.svg"> </swiper-slide>
+            <swiper-slide><img src="./assets/svgs/trust/logo3.svg"></swiper-slide>
+            <swiper-slide><img src="./assets/svgs/trust/logo4.svg"></swiper-slide>
+            <swiper-slide><img src="./assets/svgs/trust/logo1.svg"></swiper-slide>
+            <swiper-slide><img src="./assets/svgs/trust/logo2.svg"> </swiper-slide>
+            <swiper-slide><img src="./assets/svgs/trust/logo3.svg"></swiper-slide>
+            <swiper-slide><img src="./assets/svgs/trust/logo4.svg"></swiper-slide>
+
+          </swiper-container>
+          
+
         </div>
 
     </section>
@@ -366,6 +378,7 @@
      <h6>/ Style Guide</h6>
  </nav>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
