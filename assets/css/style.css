@@ -13,6 +13,26 @@ a{
 a:hover{
     text-decoration: underline;}
     
+    swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+  
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     .off-canvas{
         background-color: rgba(0, 0, 0, 0.8);
         position: fixed;
@@ -44,7 +64,7 @@ a:hover{
         padding: 20px;
     }
 
-    .fa-xmark{
+    .fa-x{
         color: #fff;
         font-size: 32px;
         right: 25px;
@@ -52,7 +72,7 @@ a:hover{
         position: absolute;
         cursor: pointer;
     }
-    .fa-xmark:hover{
+    .fa-x:hover{
         color: #6aacc8;
         transition: color 1.2s ease;
     }
@@ -69,7 +89,7 @@ header{
 button{cursor: pointer;}
 
 .fa-bars{
-    font-size: 26px;
+    font-size: 32px;
     display: none;
     cursor: pointer;
 }
@@ -143,13 +163,12 @@ button{cursor: pointer;}
     text-align: center;
 }
 .intro-logo {
-   display: flex;
-   flex-direction:row;
-   align-items: center;
-   justify-content: space-around; 
+  
    padding-top: 45px;   
-   flex-wrap: wrap;
+
 }
+
+
 /* ------Services */
 .services {
     display: flex;
@@ -1145,10 +1164,9 @@ text-align: center;}
     padding-top: 35px ;}
 .links h6:nth-child(2){display: none;}
 .links h6:nth-child(3){display: none;}
-.links h6:nth-child(8){display: none;}
-.links h6:nth-child(7){display: none;}}
+
         
-@media(max-width:490px) {
+@media(max-width:578px) {
 header{
     padding-left: 15px ;
     padding-right: 15px ;
